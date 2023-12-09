@@ -13,7 +13,7 @@ public class ArrayDequeCreator extends PriorityQueue<String> {
 
         takeTwo(deque, secondQueue);
 
-        while (!firstQueue.isEmpty() && !secondQueue.isEmpty()){
+        while (!firstQueue.isEmpty() || !secondQueue.isEmpty()){
             if (!firstQueue.isEmpty())
                 nextTurn(deque, firstQueue);
 
