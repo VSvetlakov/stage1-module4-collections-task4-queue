@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 public class PriorityQueueCreator {
     public PriorityQueue<String> createPriorityQueue(List<String> firstList, List<String> secondList) {
 
-        PriorityQueue<String> queue = new PriorityQueue(Comparator.reverseOrder());
+        PriorityQueue<String> queue = new PriorityQueue<String>(Comparator.reverseOrder());
 
         queue.addAll(firstList);
         queue.addAll(secondList);
